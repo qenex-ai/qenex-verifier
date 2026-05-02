@@ -34,7 +34,7 @@ Categories reported (curated, stable, every entry justified):
         patents — the "auditable science" infrastructure.
 
   ai_orchestration
-        Modules that wire AI / agents / FDSP / decomposition into the
+        Modules that wire AI agents and orchestration layers into the
         scientific stack.
 """
 

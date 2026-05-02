@@ -361,11 +361,11 @@ def _call_chemistry_geom(
     Hartree dimension MLT⁻²) and adds a ``simulate.chemistry_geom``
     node to the trace.
 
-    Path A use case (Step 6 of Phase 1 + Path A productionization):
-    every accepted discovery in ``~/.qenex/discovery_ledger.jsonl`` will
-    be paired with a ``.qlang`` verification program that reads its
-    ``atoms.json`` sidecar via this block. ``qlang replay`` of the
-    resulting trace then proves the discovery is reproducible.
+    Reproducibility use case: a discovery's ``atoms.json`` geometry
+    sidecar can be paired with a ``.qlang`` verification program that
+    reads it via this block; ``qlang replay`` of the resulting trace
+    then proves the discovery's electronic-structure result is
+    reproducible from the raw coordinates.
 
     Required arguments:
         atoms_file : STRING — absolute or relative path to a JSON file

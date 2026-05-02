@@ -1,8 +1,8 @@
 # QENEX Verifier — pinned reproducer outputs (v2.0.0)
 # Method: python3 PATH --json | sha256sum
-# Generated: 2026-05-02T15:27Z
+# Generated: 2026-05-02T15:48Z
 
 f20d64fdfd3481cb96c97564d71fbb61b2e852eb39a624c00d6951d81c4b4a10  qenex-verifier-claims-method_inventory.json
-4d2cf687e1b48bedd6b78b84f521fd10279312442e29f046c3f23585808e4299  qenex-verifier-claims-module_inventory.json
-e9af97b98b0974b10fbede7b9b9c53ba0778d7b5f6f44538688d03c26d25c2a0  qenex-verifier-claims-qlang_inventory.json
+db88b3855434cd25ef25e86eb77048cc9a77ea3279b1647d0293852493dcc3b4  qenex-verifier-claims-module_inventory.json
+e7720e6010c00bc747c7259b2ad9aca0fc04f3d4ad2449b003cb3a86a7df4cad  qenex-verifier-claims-qlang_inventory.json
 a6e78888fa39a187d23d14231a4af73f222a6c4be6d99f65c8edb3f7c3901c72  qenex-verifier-claims-precision_matrix.json

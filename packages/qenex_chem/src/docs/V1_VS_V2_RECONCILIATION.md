@@ -106,15 +106,22 @@ Based on this reconciliation, the v2 paper must:
 
 ## What v2 CAN newly claim (didn't exist in v1)
 
-These are real capabilities shipped between v1 (March 2026) and v2 (May 2026):
+These are real capabilities shipped between v1 (March 2026) and v2 (May 2026).
+Each is tagged with where it is reproducible: `[both]` lives in both the
+lab and the verifier subset; `[lab-only]` is exclusive to the lab
+installation.
 
-1. **Cryptographic provenance bundles**: every accepted molecule discovery emits a runnable `.qlang` verification program plus an `atoms.json` sidecar. External auditors can reproduce results by running `python3 -m cli_v04 run <bundle>.qlang`.
-2. **Path A productionization**: `provenance_verify` MCP tool wraps the full export → run → replay pipeline as a single callable.
-3. **Discovery RAG store**: 124,532 unique molecules from the continuous engine indexed at `~/.qenex/discovery_rag.db` with semantic search.
-4. **Lab-context enrichment for AI conversations**: the lab's 14,808-chunk knowledge base can now be injected into Claude conversations on demand.
-5. **Multi-provider AI gateway scaffolded**: Anthropic active, Google Gemini ready for activation when credentials are provided. Audit log per call.
+1. **[both] Cryptographic provenance bundles**: every accepted molecule discovery emits a runnable `.qlang` verification program plus an `atoms.json` sidecar. External auditors can reproduce results by running `python3 -m cli_v04 run <bundle>.qlang` against either environment.
+2. **[lab-only] Path A productionization**: an internal MCP tool wraps the full export → run → replay pipeline as a single callable for AI agents talking to the lab.
+3. **[lab-only] Discovery RAG store**: 124,532 unique molecules from the continuous engine indexed locally for semantic search.
+4. **[lab-only] Lab-context enrichment for AI conversations**: the lab's internal knowledge base can be injected into AI conversations on demand.
+5. **[lab-only] Multi-provider AI gateway**: dispatch layer for AI providers with audit log per call.
 
-These are the kind of additions that make v2 a stronger paper than v1 even where some numbers fell.
+The `[lab-only]` items live above the sovereignty boundary and are not
+reproducible from the verifier subset. They are documented here for v1→v2
+historical context and to explain what the v2 abstract means by "Path A
+productionization" and "discovery RAG indexed". Item 1 is the only
+externally-reproducible new capability.
 
 ---
 

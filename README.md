@@ -25,6 +25,7 @@ producing **bit-identical JSON output across consecutive runs**:
 | 5 of 6 reference-validated tuples sub-nanohartree                          | same as above                                                        |
 | 16 canonical Q-Lang v04 modules / 5,593 lines                              | `python3 packages/qenex_chem/src/scripts/qlang_inventory.py --json`  |
 | 3 simulation domains (chemistry, chemistry_geom, md)                       | same as above                                                        |
+| 3 v04-runnable .ql examples (+ 32 legacy)                                  | same as above                                                        |
 | 22/22 chemistry-validation checks pass                                     | `python3 packages/qenex_chem/src/verifier_evaluator.py full`         |
 | 304 chemistry tests pass (192 in tests/validation/)                        | `python3 -m pytest -q`                                               |
 
@@ -138,10 +139,12 @@ qenex-verifier/                       (this repo)
 │   │   └── scripts/{method,module,qlang,precision}_inventory.py
 │   └── qenex-qlang/
 │       ├── src/v04/                             (16 canonical interpreter modules)
-│       ├── examples/  (28 chemistry/physics teaching .ql programs + 3 v04)
+│       ├── src/qlang_v04.py                     (top-level re-export shim)
+│       ├── examples/v04/                        (3 v04-runnable .ql programs)
+│       ├── examples/legacy/                     (20 pre-v04 illustration only)
 │       └── tests/                               (canonical v04 tests)
-├── examples/qlang/                              (13 language-feature .ql tests)
-└── tests/                                       (~30 chemistry validation tests)
+├── examples/qlang/legacy/                       (12 pre-v04 language tests)
+└── tests/                                       (32 chemistry validation tests = 304 collected)
 ```
 
 What is intentionally **NOT** in this subset:

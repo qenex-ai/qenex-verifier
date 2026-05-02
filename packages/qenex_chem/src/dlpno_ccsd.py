@@ -1,7 +1,6 @@
 """
 Domain-based Local Pair Natural Orbital CCSD(T) — DLPNO-CCSD(T)
 ================================================================
-THE master key to billion-dollar computational chemistry.
 
 Standard CCSD(T) scales as O(N^7). DLPNO-CCSD(T) achieves near-linear
 scaling O(N^{1-2}) by exploiting locality of electron correlation:
@@ -12,12 +11,9 @@ scaling O(N^{1-2}) by exploiting locality of electron correlation:
 4. Per-pair CCSD amplitude equations in compact PNO basis
 5. Perturbative (T) correction via canonical CCSDSolver
 
-Accuracy vs canonical CCSD(T):
+Reported accuracy vs canonical CCSD(T) on Riplinger/Neese benchmark sets:
   NormalPNO: ~99.8%  (< 0.5 kcal/mol, chemical accuracy)
   TightPNO:  ~99.95% (< 0.1 kcal/mol)
-
-Revenue: Every pharma company needs this. ORCA charges $500K/site/year.
-         QENEX: air-gapped, sovereign, 10x faster.
 
 References:
     Riplinger & Neese, J. Chem. Phys. 138, 034106 (2013)
@@ -490,8 +486,9 @@ class DLPNOCCSDSolver:
     """
     DLPNO-CCSD(T): near-linear scaling coupled cluster.
 
-    The single algorithm that makes pharma companies pay $1B+.
-    Replaces ORCA DLPNO at 10x speed, fully air-gapped.
+    Local-correlation reformulation of CCSD(T) that retains chemical
+    accuracy (< 0.5 kcal/mol versus canonical CCSD(T)) at near-linear
+    cost in system size, following the Riplinger/Neese 2013 algorithm.
 
     Usage::
 

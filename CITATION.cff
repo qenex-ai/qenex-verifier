@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "QENEX Verifier — Open-Source Reproducer for QENEX LAB v2 Paper Claims"
+abstract: |
+  Open-source reproducer subset for the QENEX LAB v2 paper. Ships exactly
+  the chemistry-validation surface required to verify every numeric claim
+  in the v2 abstract: Hartree-Fock, MP2, CCSD, DFT, EOM-CCSD, UCCSD,
+  TDDFT, CASSCF, DLPNO-CCSD, and QMC solvers; precision matrix against
+  PySCF references on six basis sets; the canonical Q-Lang v0.4
+  interpreter (16 modules, 5,593 lines, 3 simulate domains); and a
+  chemistry-only verifier_evaluator (8 levels, 22 checks, ZERO DEFECTS).
+  Excludes the lab's autonomous discovery infrastructure, brain proxy,
+  RAG corpus, drug-discovery orchestrator, and 4 of 12 evaluator levels
+  that depend on sovereign lab modules.
+authors:
+  - name: "QENEX LTD"
+type: software
+version: "2.0.0"
+date-released: "2026-05-02"
+license: Apache-2.0
+repository-code: "https://github.com/qenex-ai/qenex-verifier"
+keywords:
+  - quantum-chemistry
+  - hartree-fock
+  - ccsd
+  - density-functional-theory
+  - reproducibility
+  - verifier
+  - chemrxiv
+identifiers:
+  - type: other
+    value: "QENEX LAB v2 paper companion"
+    description: "Verifier subset for the QENEX LAB v2 ChemRxiv preprint"
+preferred-citation:
+  type: article
+  title: "QENEX LAB: A Self-Contained Quantum Chemistry Platform with Reproducible Self-Assessed Compliance and Cryptographic Provenance Bundles"
+  authors:
+    - name: "QENEX LTD"
+  year: 2026
+  notes: "v2 ChemRxiv preprint, DOI to be assigned at deposit time. Verifier subset accompanies the preprint at https://github.com/qenex-ai/qenex-verifier."

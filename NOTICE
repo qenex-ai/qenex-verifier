@@ -1,0 +1,21 @@
+QENEX Verifier
+Copyright 2026 QENEX LTD
+
+This product includes software developed by QENEX LTD as the
+open-source verifier subset of the QENEX LAB v2 platform
+(https://github.com/qenex-ai/qenex-verifier).
+
+References to external scientific work (e.g. PySCF for cross-validation,
+Riplinger & Neese 2013 for the DLPNO-CCSD(T) algorithm, Lebedev grids
+for DFT quadrature, CODATA 2018/2022 for physical constants) are cited
+in the relevant source files. No external software is bundled.
+
+The full QENEX LAB platform — including the autonomous discovery
+engine, drug-discovery orchestrator, brain proxy, RAG corpus, MCP
+tools, lab integrity guard, robot-protocol layer, NMR module, ZORA
+relativistic engine, materials genome, FEP engine, regulatory engine,
+auto-patent generator, and continuous discovery infrastructure — is
+NOT included in this verifier subset and remains the proprietary,
+sovereign asset of QENEX LTD.
+
+For commercial licensing of the full platform, contact QENEX LTD.

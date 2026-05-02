@@ -62,10 +62,7 @@ _PROMETHEUS_LIBRARY_CANDIDATES = (
     "/usr/local/lib/libprometheus_c.so",
     "/usr/lib/libprometheus_c.so",
     "/usr/lib/x86_64-linux-gnu/libprometheus_c.so",
-    # 4. Canonical developer build tree on a QENEX workstation.  Referenced
-    #    only as a fallback if the lib was not installed system-wide.
-    "/home/ubuntu/prometheus-unchained/build/libprometheus_c.so",
-    # 5. A build tree co-located with the qenex-lab repo, e.g. for CI
+    # 4. A build tree co-located with the repository, e.g. for CI
     #    containers that check out prometheus-unchained as a sibling repo.
     os.path.join(
         os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))),
