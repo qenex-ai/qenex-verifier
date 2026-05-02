@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qenex-verifier"
+version = "2.0.0"
+description = "Open-source verifier subset for QENEX LAB v2 paper claims (chemistry only)"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10,<3.13"
+authors = [
+    { name = "QENEX LTD" },
+]
+keywords = [
+    "quantum-chemistry",
+    "hartree-fock",
+    "ccsd",
+    "dft",
+    "reproducibility",
+    "verifier",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "numpy>=1.24,<2.0",
+    "scipy>=1.10",
+    "numba>=0.58",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-timeout>=2.1",
+]
+# PySCF is used as a cross-validation reference inside test_cross_validation.py
+# and for the precision_matrix tuples that have frozen reference values. It is
+# OPTIONAL — the verifier scripts run without PySCF; only the cross-validation
+# tests will skip when PySCF is missing.
+pyscf = [
+    "pyscf>=2.3",
+]
+dev = [
+    "qenex-verifier[test,pyscf]",
+]
+
+[project.urls]
+Homepage = "https://chemrxiv.org/engage/chemrxiv/article-details/<v2-pending>"
+Documentation = "https://github.com/qenex-ai/qenex-verifier"
+Repository = "https://github.com/qenex-ai/qenex-verifier"
+Changelog = "https://github.com/qenex-ai/qenex-verifier/blob/main/CHANGELOG.md"
+
+# Verifier subset uses direct imports + sys.path injection (mirroring the
+# QENEX LAB conftest.py pattern). No setuptools.packages.find — the test
+# runner picks up sources via conftest.py rather than via a package install.
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests", "packages/qenex-qlang/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--timeout=120",
+    "--tb=short",
+    "--import-mode=importlib",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+]
