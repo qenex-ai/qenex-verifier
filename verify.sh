@@ -13,6 +13,24 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
+# Preflight: check Python + numpy / scipy availability (the chemistry
+# stack imports these at module-load time). Fail with a clear message
+# rather than a Python traceback if either is missing.
+if ! command -v python3 >/dev/null 2>&1; then
+    echo "ERROR: python3 not found in PATH." >&2
+    echo "       Install Python 3.10-3.12 and retry." >&2
+    exit 2
+fi
+
+for pkg in numpy scipy; do
+    if ! python3 -c "import $pkg" 2>/dev/null; then
+        echo "ERROR: Python package '$pkg' is not installed." >&2
+        echo "       Install with:  pip install -e \".[test]\"" >&2
+        echo "       Or:            pip install numpy scipy" >&2
+        exit 2
+    fi
+done
+
 echo "Running QENEX Verifier reproducers..."
 echo "(Each script runs in --json mode and writes its output to a tmp file.)"
 echo
