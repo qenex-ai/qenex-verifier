@@ -170,4 +170,5 @@ claims" means in v2.
 ## Author and affiliation
 
 Author: Abdulrahman Sameer R Almutairi (Almutairi, A. S. R.) — QENEX LTD.
+ORCID: [0009-0004-4797-2226](https://orcid.org/0009-0004-4797-2226).
 Affiliation: QENEX LTD, Scientific Intelligence Division.

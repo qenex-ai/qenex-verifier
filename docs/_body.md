@@ -13,6 +13,7 @@ Reproducible Self-Assessed Compliance and Cryptographic Provenance Bundles
 downloads as of 2026-05-02).
 
 **Author**: Abdulrahman Sameer R Almutairi (QENEX LTD).
+**ORCID**: [0009-0004-4797-2226](https://orcid.org/0009-0004-4797-2226).
 **Affiliation**: QENEX LTD (Scientific Intelligence Division).
 
 **Deposit channel**: Zenodo, OPEN ACCESS. Source code repository:
@@ -465,6 +466,7 @@ claims" means in v2.
 ### Author and affiliation
 
 Author: Abdulrahman Sameer R Almutairi (Almutairi, A. S. R.) — QENEX LTD.
+ORCID: [0009-0004-4797-2226](https://orcid.org/0009-0004-4797-2226).
 Affiliation: QENEX LTD, Scientific Intelligence Division.
 
 \newpage

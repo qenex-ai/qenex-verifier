@@ -15,6 +15,7 @@ authors:
   - family-names: "Almutairi"
     given-names: "Abdulrahman Sameer R"
     affiliation: "QENEX LTD"
+    orcid: "https://orcid.org/0009-0004-4797-2226"
 type: software
 version: "2.0.0"
 date-released: "2026-05-08"
@@ -39,5 +40,6 @@ preferred-citation:
     - family-names: "Almutairi"
       given-names: "Abdulrahman Sameer R"
       affiliation: "QENEX LTD"
+      orcid: "https://orcid.org/0009-0004-4797-2226"
   year: 2026
   notes: "v2 ChemRxiv preprint, DOI to be assigned at deposit time. Verifier subset accompanies the preprint at https://github.com/qenex-ai/qenex-verifier."

@@ -182,7 +182,8 @@ What is intentionally **NOT** in this subset:
   year    = {2026},
   organization = {QENEX LTD},
   doi     = {<v2-pending>},
-  note    = {Verifier subset: \url{https://github.com/qenex-ai/qenex-verifier}}
+  note    = {ORCID: 0009-0004-4797-2226. Verifier subset:
+             \url{https://github.com/qenex-ai/qenex-verifier}}
 }
 ```
 

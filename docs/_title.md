@@ -4,7 +4,7 @@ title: |
 subtitle: |
   Reproducer subset, claim manifest, v1→v2 reconciliation, changelog
 author:
-  - Abdulrahman Sameer R Almutairi (QENEX LTD)
+  - "Abdulrahman Sameer R Almutairi (QENEX LTD), ORCID 0009-0004-4797-2226"
 date: "2026-05-08"
 abstract: |
   This document collates the reviewer-facing materials for the QENEX
