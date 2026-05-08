@@ -10,6 +10,13 @@ computing system of QENEX LTD. The verifier subset is the strict
 open-source slice of that platform that an external auditor can run
 without access to the lab's brain server.
 
+**For reviewers in a hurry**: read [`docs/QENEX_LAB_v2_Summary_Card.pdf`](docs/QENEX_LAB_v2_Summary_Card.pdf)
+(2 pages) before diving in. The full Supplementary Information is at
+[`docs/QENEX_LAB_v2_Supplementary.pdf`](docs/QENEX_LAB_v2_Supplementary.pdf)
+(14 pages: abstract, claim manifest, v1→v2 reconciliation, changelog).
+Both PDFs are regeneratable from markdown sources via
+[`docs/build_pdf.sh`](docs/build_pdf.sh) (requires pandoc + xelatex).
+
 ---
 
 ## What is reproducible here
