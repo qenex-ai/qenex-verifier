@@ -174,14 +174,15 @@ What is intentionally **NOT** in this subset:
 ## Citing
 
 ```bibtex
-@article{qenex_lab_v2_2026,
-  title  = {QENEX LAB: A Self-Contained Quantum Chemistry Platform with
-            Reproducible Self-Assessed Compliance and Cryptographic
-            Provenance Bundles},
-  author = {QENEX LTD},
-  year   = {2026},
-  doi    = {<v2-pending>},
-  note   = {Verifier subset: \url{https://github.com/qenex-ai/qenex-verifier}}
+@article{almutairi_qenex_lab_v2_2026,
+  title   = {QENEX LAB: A Self-Contained Quantum Chemistry Platform with
+             Reproducible Self-Assessed Compliance and Cryptographic
+             Provenance Bundles},
+  author  = {Almutairi, Abdulrahman Sameer R},
+  year    = {2026},
+  organization = {QENEX LTD},
+  doi     = {<v2-pending>},
+  note    = {Verifier subset: \url{https://github.com/qenex-ai/qenex-verifier}}
 }
 ```
 

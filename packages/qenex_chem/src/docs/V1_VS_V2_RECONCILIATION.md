@@ -167,7 +167,7 @@ claims" means in v2.
 
 ---
 
-## Open question for v2 deposit
+## Author and affiliation
 
-Author identity (placeholder until specified): `[AUTHOR_NAME] (QENEX LTD)`.
-Affiliations: QENEX LTD primary; individual scientific affiliation TBD.
+Author: Abdulrahman Sameer R Almutairi (Almutairi, A. S. R.) — QENEX LTD.
+Affiliation: QENEX LTD, Scientific Intelligence Division.

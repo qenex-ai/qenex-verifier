@@ -1,9 +1,11 @@
 QENEX Verifier
 Copyright 2026 QENEX LTD
 
-This product includes software developed by QENEX LTD as the
+This product includes software developed at QENEX LTD as the
 open-source verifier subset of the QENEX LAB v2 platform
 (https://github.com/qenex-ai/qenex-verifier).
+
+Lead author: Abdulrahman Sameer R Almutairi (QENEX LTD).
 
 References to external scientific work (e.g. PySCF for cross-validation,
 Riplinger & Neese 2013 for the DLPNO-CCSD(T) algorithm, Lebedev grids

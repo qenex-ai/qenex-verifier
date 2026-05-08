@@ -1,6 +1,6 @@
 ---
 title: "QENEX LAB v2 — One-Page Summary Card"
-author: "QENEX LTD"
+author: "Abdulrahman Sameer R Almutairi (QENEX LTD)"
 date: "2026-05-08"
 geometry:
   - margin=1.8cm
@@ -85,10 +85,10 @@ externally-checkable claim.
 ## Citation
 
 ```
-QENEX LTD (2026). QENEX LAB: A Self-Contained Quantum Chemistry
-Platform with Reproducible Self-Assessed Compliance and Cryptographic
-Provenance Bundles. ChemRxiv preprint, DOI: <v2-pending>.
-Verifier subset: https://github.com/qenex-ai/qenex-verifier
+Almutairi, A. S. R. (2026). QENEX LAB: A Self-Contained Quantum
+Chemistry Platform with Reproducible Self-Assessed Compliance and
+Cryptographic Provenance Bundles. ChemRxiv preprint, DOI: <v2-pending>.
+QENEX LTD. Verifier subset: https://github.com/qenex-ai/qenex-verifier
 ```
 
 \vspace{1em}

@@ -4,7 +4,7 @@ title: |
 subtitle: |
   Reproducer subset, claim manifest, v1→v2 reconciliation, changelog
 author:
-  - QENEX LTD
+  - Abdulrahman Sameer R Almutairi (QENEX LTD)
 date: "2026-05-08"
 abstract: |
   This document collates the reviewer-facing materials for the QENEX

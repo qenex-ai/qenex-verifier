@@ -12,9 +12,8 @@ Reproducible Self-Assessed Compliance and Cryptographic Provenance Bundles
 10.26434/chemrxiv.15001263/v1, March 2026 — restricted access, 0
 downloads as of 2026-05-02).
 
-**Author**: `[AUTHOR_NAME]` (QENEX LTD).
-**Affiliation**: QENEX LTD (Scientific Intelligence Division). Individual
-academic affiliation: TBD.
+**Author**: Abdulrahman Sameer R Almutairi (QENEX LTD).
+**Affiliation**: QENEX LTD (Scientific Intelligence Division).
 
 **Deposit channel**: Zenodo, OPEN ACCESS. Source code repository:
 https://github.com/qenex-ai/qenex-lab.git
@@ -463,10 +462,10 @@ claims" means in v2.
 
 ---
 
-### Open question for v2 deposit
+### Author and affiliation
 
-Author identity (placeholder until specified): `[AUTHOR_NAME] (QENEX LTD)`.
-Affiliations: QENEX LTD primary; individual scientific affiliation TBD.
+Author: Abdulrahman Sameer R Almutairi (Almutairi, A. S. R.) — QENEX LTD.
+Affiliation: QENEX LTD, Scientific Intelligence Division.
 
 \newpage
 

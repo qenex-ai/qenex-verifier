@@ -12,10 +12,12 @@ abstract: |
   RAG corpus, drug-discovery orchestrator, and 4 of 12 evaluator levels
   that depend on sovereign lab modules.
 authors:
-  - name: "QENEX LTD"
+  - family-names: "Almutairi"
+    given-names: "Abdulrahman Sameer R"
+    affiliation: "QENEX LTD"
 type: software
 version: "2.0.0"
-date-released: "2026-05-02"
+date-released: "2026-05-08"
 license: Apache-2.0
 repository-code: "https://github.com/qenex-ai/qenex-verifier"
 keywords:
@@ -34,6 +36,8 @@ preferred-citation:
   type: article
   title: "QENEX LAB: A Self-Contained Quantum Chemistry Platform with Reproducible Self-Assessed Compliance and Cryptographic Provenance Bundles"
   authors:
-    - name: "QENEX LTD"
+    - family-names: "Almutairi"
+      given-names: "Abdulrahman Sameer R"
+      affiliation: "QENEX LTD"
   year: 2026
   notes: "v2 ChemRxiv preprint, DOI to be assigned at deposit time. Verifier subset accompanies the preprint at https://github.com/qenex-ai/qenex-verifier."
