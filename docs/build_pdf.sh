@@ -66,6 +66,20 @@ cd "$(dirname "$0")"
     !incode && /^#/    { print "##" substr($0, 2); next }
     { print }
   ' ../CHANGELOG.md
+
+  echo
+  echo '\newpage'
+  echo
+  echo '# 5. Conflict of Interest declaration'
+  echo
+  awk '
+    /^```/ { incode = !incode; print; next }
+    !incode && /^####/ { print "#####" substr($0, 5); next }
+    !incode && /^###/  { print "####" substr($0, 4); next }
+    !incode && /^##/   { print "###" substr($0, 3); next }
+    !incode && /^#/    { print "##" substr($0, 2); next }
+    { print }
+  ' ./_coi.md
 } > _body.md
 
 # 1. Full SI PDF
