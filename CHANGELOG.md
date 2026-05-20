@@ -4,6 +4,34 @@ All notable changes to QENEX Verifier are documented here. Format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning follows [SemVer](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] — 2026-05-20
+
+### Added
+
+- **Section 5 "Conflict of Interest declaration"** in the supplementary
+  PDF. New source file `docs/_coi.md`. `docs/build_pdf.sh` updated to
+  emit this section after the §4 changelog. Discloses the sole author's
+  role at QENEX LTD (UK Companies House #16523814), the commercial
+  nature of the proprietary QENEX LAB platform, and the absence of
+  external funding.
+
+### Context
+
+- Created to accompany the ChemRxiv preprint V1 submission (2026-05-19,
+  currently in moderation; CC BY 4.0; physical-chemistry +
+  theoretical-computational-chemistry subject areas).
+- Companion Zenodo deposit at v2.0.1
+  ([DOI 10.5281/zenodo.20303158](https://doi.org/10.5281/zenodo.20303158))
+  carries the byte-identical supplementary PDF.
+- Concept DOI [10.5281/zenodo.19157749](https://doi.org/10.5281/zenodo.19157749)
+  always resolves to the latest version.
+
+### Unchanged
+
+- All code, reproducer scripts, basis sets, test suite,
+  `MANIFEST.sha256` pinned outputs, and every numeric claim in the v2
+  paper abstract. v2.0.1 is a supplementary-PDF-only release.
+
 ## [2.0.0] — 2026-05-02
 
 Initial open-source release. Companion verifier subset for the QENEX LAB
