@@ -717,12 +717,19 @@ class BenchmarkSuite:
     # Cache management
     # ================================================================
 
-    def _cache_key(self, geom_key, basis, method_prefix="hf"):
-        return f"{method_prefix}:{geom_key}:{basis}"
+    def _cache_key(self, geom_key, basis, method_prefix="hf", charge=0, mult=1):
+        # charge and mult are part of the key because _get_hf/_get_ccsd accept
+        # them: without them a cation or a triplet of the same molecule in the
+        # same basis COLLIDES with the neutral singlet, and whichever ran first
+        # is silently returned to the second caller. No current call site varies
+        # them, so this is a latent defect rather than an active one -- but a
+        # cache keyed on fewer fields than its producer takes is a bug waiting
+        # for the first ionisation or open-shell benchmark to be added.
+        return f"{method_prefix}:{geom_key}:{basis}:q{charge}:m{mult}"
 
     def _get_hf(self, geom_key, basis, charge=0, mult=1):
         """Get or compute HF result. Returns (hf_solver, E_hf, mol)."""
-        key = self._cache_key(geom_key, basis, "hf")
+        key = self._cache_key(geom_key, basis, "hf", charge, mult)
         if key in self._hf_cache:
             return self._hf_cache[key]
 
@@ -736,7 +743,7 @@ class BenchmarkSuite:
 
     def _get_ccsd(self, geom_key, basis, charge=0, mult=1):
         """Get or compute CCSD result. Returns (ccsd_solver, E_corr, E_hf, mol)."""
-        key = self._cache_key(geom_key, basis, "ccsd")
+        key = self._cache_key(geom_key, basis, "ccsd", charge, mult)
         if key in self._ccsd_cache:
             return self._ccsd_cache[key]
 
